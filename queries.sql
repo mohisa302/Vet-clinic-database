@@ -17,7 +17,7 @@ ROLLBACK;
 BEGIN;
   UPDATE animals
   SET species = 'digimon'
-  WHERE name LIKE '%mon%';
+  WHERE name LIKE '%mon';
   UPDATE animals
   SET species = 'pokemon'
   WHERE species IS NULL;  
@@ -56,5 +56,5 @@ SELECT MAX(weight_kg), MIN(weight_kg), species
 
 SELECT AVG(escape_attempts), species
   FROM animals
-  WHERE date_of_birth between '1990-01-01' AND '2000-01-01'
+  WHERE date_of_birth between '1990-01-01' AND '2000-12-31'
   GROUP BY species;

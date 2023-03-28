@@ -6,9 +6,6 @@ INSERT INTO animals (name, date_of_birth, weight_kg, neutered, escape_attempts) 
   ('Pikachu', 'Jan 7, 2021', 15.04, 'false', 1),
   ('Devimon', 'May 12, 2017', 11, 'true', 5);
 
- ALTER TABLE animals
-  ADD species varchar(100);
-
 INSERT INTO animals (name, date_of_birth, weight_kg, neutered, escape_attempts) VALUES
   ('Charmander', ' Feb 8, 2020', -11, 'false', 0),
   ('Plantmon', ' Nov 15, 2021', -5.7, 'true', 2),
