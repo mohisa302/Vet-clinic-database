@@ -17,3 +17,4 @@ INSERT INTO animals (name, date_of_birth, weight_kg, neutered, escape_attempts) 
   ('Boarmon', 'Jun 7, 2005', 20.4, 'true', 7),
   ('Blossom', ' Oct 13, 1998', 17, 'true', 3),
   ('Ditto', 'May 14, 2022', 22, 'true', 4);
+
