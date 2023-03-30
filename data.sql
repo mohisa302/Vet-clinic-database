@@ -48,9 +48,8 @@ INSERT INTO specializations(vets_id, species_id) VALUES
   (3, 1),
   (3, 2),
   (4, 2);
-
   
-INSERT INTO visits(vets_id, animals_id, date_of_visit) VALUES
+INSERT INTO visits(animals_id, vets_id, date_of_visit) VALUES
   ((SELECT id FROM animals WHERE name = 'Agumon'), (SELECT id FROM vets WHERE name = 'William Tatcher'), '2020-05-24'),
   ((SELECT id FROM animals WHERE name = 'Agumon'), (SELECT id FROM vets WHERE name = 'Stephanie Mendez'), '2020-07-22'),
   ((SELECT id FROM animals WHERE name = 'Gabumon'), (SELECT id FROM vets WHERE name = 'Jack Harkness'), '2021-02-02'),
