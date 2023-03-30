@@ -39,3 +39,29 @@ ALTER TABLE animals
 ADD CONSTRAINT constraint_fk2
 FOREIGN KEY (owner_id)
 REFERENCES owners(id);
+
+CREATE TABLE vets (
+    id serial not null primary key, 
+    name varchar(100),
+    age INT,
+    date_of_graduation DATE
+);
+
+CREATE TABLE specializations(
+    vets_id INT,
+    species_id INT,
+    FOREIGN KEY (vets_id) REFERENCES vets(id),
+    FOREIGN KEY (species_id) REFERENCES species(id)
+); 
+
+ALTER TABLE animals
+ADD CONSTRAINT uq_animals_id UNIQUE (id);
+
+CREATE TABLE visits(
+    vets_id INT,
+    animals_id INT,
+    date_of_visit DATE,
+    FOREIGN KEY (vets_id) REFERENCES vets(id),
+    FOREIGN KEY (animals_id) REFERENCES animals(id)
+); 
+
