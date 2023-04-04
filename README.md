@@ -58,12 +58,12 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 Vet-clinic-database <a name="about-project"></a>
 
-A relational database to create the initial data structure for a vet clinic.
+**Vet-clinic-database** is a relational database to describe the animals.
+
 
 ![vet_clinic diagram](https://user-images.githubusercontent.com/96848068/229746429-22d3f7cb-b0ee-4fbf-ac90-d0730e8abad9.png)
 
 
-**Vet-clinic-database** is a relational database to describe the animals.
 
 ## 🛠 Built With <a name="built-with"></a>
 
